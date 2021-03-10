@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>  //bu kısıma JS elementleri tanımlaya bilirsin.
+
+        function myFunction() {
+            document.getElementById("demo-6").innerHTML = "Bilgi Headın içinde yazılan js ile gelmektedir.";
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <h2>My First JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <h2 id="demo"></h2>
+    <hr>
+
+    <h2>Formu Doldurdunuzmu?</h2>
+
+    <p id="demo-2">Eğer doldurduysanız Gönder butonuna tıklayınız.</p>
+
+    <button type="button"
+        onclick='document.getElementById("demo-2").innerHTML = "Form bilginiz gönderildi en kısa sürede iletişime geçilecektir."'>Gönder</button>
+
+    <hr>
+
+    <p id="demo-3">Css bilgilerini değiştirebilirsiniz.</p>
+
+    <button type="button" onclick="document.getElementById('demo-3').style.fontSize='35px'">Css değiştir</button>
+
+    <hr>
+
+    <p id="demo-4">Html bilgilerini gizleyebilirsiniz.</p>
+
+    <button type="button" onclick="document.getElementById('demo-4').style.display='none'">Yazıyı gizle</button>
+
+    <hr>
+
+    <p>Gizli olan Html bilgisini gösterebilirsiniz</p>
+
+    <p id="demo-5" style="display:none">Merhaba JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('demo-5').style.display='block'">Gizli içeriği
+        göster</button>
+
+    <hr>
+
+    <p id="demo-6">Headen içinde JS</p>
+
+    <button type="button" onclick="myFunction()">Dene</button>
+    <hr>
+
+
+    <p id="demo-7">Metin değişikliği body kısmında yazılan Js tarafından gelmektedir.</p>
+
+    <button type="button" onclick="myFunction()">Dene</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo-7").innerHTML = "Başarılı";
+        }
+    </script>
+
+    <hr>
+
+    <p id="demo-8">Html yi myScript.js den değiştiriyor</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script src="myScript.js"></script>
+
+    <hr>
+
+    <p id="demo">Harici bir URL'den değiştriyor</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+    <hr>
+    <p>Html çıktısı olarak işlem yaptırma ve bunu ekrana yazdırma</p>
+        
+        <script>
+        document.write(5 * 6);
+        </script>
+    <hr>
+
+    <p>Html elementine yazdırama</p>
+
+    <p id="toplama"></p><p id="carpma"></p><p id="cıkarma"></p><p id="bolme"></p>
+
+    <script>
+    document.getElementById("toplama").innerHTML = 5 + 6;
+    document.getElementById("carpma").innerHTML = 5 * 6;
+    document.getElementById("cıkarma").innerHTML = 5 - 6;
+    document.getElementById("bolme").innerHTML = 5 / 6;
+    </script>
+
+    <hr>
+    <p>Uyarı mesajı. Sayfa açıldığında işleme alır.</p>
+
+ <!--<script> window.alert ('Sayfa açıldığında mesaj İletmek için (kod satırı:114)') </script> -->   
+
+    <hr>
+
+    <h2>Tarayıcıda işlem yaptırma</h2>
+
+    <p>F12 basın  </p>
+    <p>Açılan pencereden Console bölümüne geçin</p>
+    <p>Yeniden çalıştıra tıklayın </p>
+
+    <script>
+    console.log(5 + 6);
+    </script>
+
+    <hr>
+
+    <p>Değer atama ve atanmış değerden işlem yaptırma.</p>
+
+    <p id="atama"></p>
+
+    <script>
+        var x, y, z;
+        x = 4;
+        y = 6;
+        z = x + y;
+
+        document.getElementById("atama").innerHTML= "z nin değeri y+x den gelmektedir " + z + " .";
+    </script>
+
+    <hr>
+
+    <p>Sayıların yazılımı</p>
+    <p id="sayi"></p>
+    <script>
+        document.getElementById("sayi").innerHTML=10.50;
+    </script>
+
+    <hr>
+    <p>Değişken atama</p>
+    <p id="değisken"></p>
+    <script>
+        var x;
+        x = 34;
+        document.getElementById("değisken").innerHTML= x
+    </script>
+
+    <hr>
+
+    <p>Aritmatik hesaplar yapabilirsiniz</p>
+    <p id="aritmatik"></p>
+    <script>
+        document.getElementById("aritmatik").innerHTML= ( 5 * 10 ) + 3 ;
+    </script>
+    <hr>
+
+    
+
+
+
+</body>
+
+</html>
